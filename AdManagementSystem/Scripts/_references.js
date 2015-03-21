@@ -103,3 +103,6 @@
 /// <reference path="jquery-1.9.1.js" />
 /// <reference path="npm.js" />
 /// <reference path="myscript.js" />
+/// <reference path="jquery.slimscroll.min.js" />
+/// <reference path="jquery.bootstrap.wizard.min.js" />
+/// <reference path="prettify.js" />

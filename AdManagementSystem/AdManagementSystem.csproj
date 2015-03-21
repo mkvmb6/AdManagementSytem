@@ -41,8 +41,36 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.3\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,8 +85,17 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI, Version=2013.3.1015.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q3 2013\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Advertiser\BuyInventory.aspx" />
+    <Content Include="Advertiser\Dashboard.aspx" />
+    <Content Include="Advertiser\MyAccount.aspx" />
+    <Content Include="Advertiser\MyAds.aspx" />
+    <Content Include="Advertiser\NewCampaign.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -78,6 +115,7 @@
     <Content Include="css\datatables\images\sort_desc_disabled.png" />
     <Content Include="css\datepicker\datepicker3.css" />
     <Content Include="css\daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="css\Flags.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\iCheck\all.css" />
     <Content Include="css\iCheck\flat\aero%402x.png" />
@@ -215,8 +253,10 @@
     <Content Include="css\jvectormap\jquery-jvectormap-1.2.2.css" />
     <Content Include="css\morris\morris.css" />
     <Content Include="css\MyStyleSheet.css" />
+    <Content Include="css\prettify.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="css\wizard.css" />
     <Content Include="empty.html" />
     <Content Include="favicon1.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -224,6 +264,7 @@
     <Content Include="fonts\ionicons.svg" />
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\ajax-loader1.gif" />
+    <Content Include="img\asc.gif" />
     <Content Include="img\avatar.png" />
     <Content Include="img\avatar04.png" />
     <Content Include="img\avatar2.png" />
@@ -244,6 +285,7 @@
     <Content Include="img\credit\paypal.png" />
     <Content Include="img\credit\paypal2.png" />
     <Content Include="img\credit\visa.png" />
+    <Content Include="img\flags.png" />
     <Content Include="img\icons.png" />
     <Content Include="img\sprite-skin-flat.png" />
     <Content Include="img\sprite-skin-nice.png" />
@@ -415,17 +457,66 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="Advertiser\AdvertiserMaster.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.bootstrap.wizard.min.js" />
+    <Content Include="Scripts\jquery.slimscroll.min.js" />
     <Content Include="Scripts\MyScript.js" />
     <Content Include="Scripts\npm.js" />
     <None Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Scripts\prettify.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advertiser\AdvertiserMaster.Master.cs">
+      <DependentUpon>AdvertiserMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\AdvertiserMaster.Master.designer.cs">
+      <DependentUpon>AdvertiserMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Advertiser\BuyInventory.aspx.cs">
+      <DependentUpon>BuyInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\BuyInventory.aspx.designer.cs">
+      <DependentUpon>BuyInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advertiser\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advertiser\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advertiser\MyAds.aspx.cs">
+      <DependentUpon>MyAds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\MyAds.aspx.designer.cs">
+      <DependentUpon>MyAds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advertiser\NewCampaign.aspx.cs">
+      <DependentUpon>NewCampaign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\NewCampaign.aspx.designer.cs">
+      <DependentUpon>NewCampaign.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Common.Master.cs">
       <DependentUpon>Common.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -501,7 +592,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />
-    <Folder Include="Advertiser\" />
     <Folder Include="Publisher\" />
   </ItemGroup>
   <PropertyGroup>
