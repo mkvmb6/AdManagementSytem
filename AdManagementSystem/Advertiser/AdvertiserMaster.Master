@@ -34,7 +34,7 @@
 </head>
 <body class="skin-blue">
     <form id="form1" runat="server">
-        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajaxToolkit:ToolkitScriptManager>
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="True"></ajaxToolkit:ToolkitScriptManager>
         <!-- header logo: style can be found in header.less -->
         <header class="header">
             <a href="Dashboard.aspx" class="logo">
@@ -43,16 +43,17 @@
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
-                <!-- Sidebar toggle button-->
+                <!-- Sidebar toggle button
                 <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </a>
+                </a>-->
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                        <!-- Messages: style can be found in dropdown.less-->
+
+<%--                        <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown messages-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-envelope"></i>
@@ -249,24 +250,22 @@
                                     <a href="#">View all tasks</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li>--%>
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Jane Doe <i class="caret"></i></span>
+                                <span>Mohit Verma <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Jane Doe - Web Developer
-                                       
-                                        <small>Member since Nov. 2012</small>
+                                        Mohit Verma - Web Developer
                                     </p>
                                 </li>
-                                <!-- Menu Body -->
+<%--                                <!-- Menu Body -->
                                 <li class="user-body">
                                     <div class="col-xs-4 text-center">
                                         <a href="#">Followers</a>
@@ -278,10 +277,10 @@
                                         <a href="#">Friends</a>
                                     </div>
                                 </li>
-                                <!-- Menu Footer-->
+                                <!-- Menu Footer-->--%>
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        <a href="MyAccount.aspx" class="btn btn-default btn-flat">Profile</a>
                                     </div>
                                     <div class="pull-right">
                                         <a href="#" class="btn btn-default btn-flat">Sign out</a>
@@ -304,9 +303,9 @@
                             <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hello, Jane</p>
+                            <p>Hello, Mohit</p>
 
-                            <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+<%--                            <a href="#"><i class="fa fa-circle text-success"></i>Online</a>--%>
                         </div>
                     </div>
                     <!-- search form -->
@@ -320,45 +319,45 @@
                     </div>
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
-                    <ul class="sidebar-menu">
+                    <ul class="sidebar-menu text-bigger">
                         <li>
                             <a href="Dashboard.aspx">
-                                <i class="fa fa-dashboard fa-fw"></i><span>Dashboard</span>
+                                <i class="fa fa-dashboard fa-fw margin-right"></i><span>Dashboard</span>
                             </a>
                         </li>
                         <li>
                             <a href="BuyInventory.aspx">
-                                <i class="fa fa-bar-chart-o fa-fw"></i><span>Buy Inventory</span>
+                                <i class="fa fa-bar-chart-o fa-fw margin-right"></i><span>Buy Inventory</span>
                             </a>
                         </li>
                         <li>
                             <a href="NewCampaign.aspx">
-                                <i class="fa fa-plus-square fa-fw"></i><span>New Campaign</span>
+                                <i class="fa fa-plus-square fa-fw margin-right"></i><span>New Campaign</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-folder fa-fw"></i><span>Campaign Group</span>
+                                <i class="fa fa-folder fa-fw margin-right"></i><span>Campaign Group</span>
                             </a>
                         </li>
                         <li>
                             <a href="MyAds.aspx">
-                                <i class="fa fa-hdd-o fa-fw"></i><span>My Ads</span>
+                                <i class="fa fa-hdd-o fa-fw margin-right"></i><span>My Ads</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fa fa-credit-card fa-fw"></i><span>My Wallet</span>
+                            <a href="MyWallet.aspx">
+                                <i class="fa fa-credit-card fa-fw margin-right"></i><span>My Wallet</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fa fa-user fa-fw"></i><span>My Account</span>
+                            <a href="MyAccount.aspx">
+                                <i class="fa fa-user fa-fw margin-right"></i><span>My Account</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fa fa-bullhorn fa-fw"></i><span>Support</span>
+                            <a href="Support.aspx">
+                                <i class="fa fa-bullhorn fa-fw margin-right"></i><span>Support</span>
                             </a>
                         </li>
                         <%--<li class="treeview">
@@ -466,11 +465,11 @@
     </form>
     <%--    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>--%>
     <script src="../Scripts/bootstrap.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="../js/AdminLTE/app.js" type="text/javascript"></script>
+    <!-- AdminLTE App 
+    <script src="../js/AdminLTE/app.js" type="text/javascript"></script>-->
 
     <!-- AdminLTE for demo purposes -->
     <%--    <script src="../js/AdminLTE/demo.js" type="text/javascript"></script>--%>
-
+    
 </body>
 </html>

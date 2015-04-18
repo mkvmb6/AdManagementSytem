@@ -28,7 +28,7 @@
 #wizHeader {
     list-style: none;
     overflow: hidden;
-    font: 18px Helvetica, Arial, Sans-Serif;
+    /*font: 18px Helvetica, Arial, Sans-Serif;*/
     margin: 0;
     padding: 0;
     cursor: pointer;
@@ -43,7 +43,7 @@
             text-decoration: none;
             padding: 10px 0 10px 55px;
             background: brown; /* fallback color */
-            background: hsla(34,85%,35%,1);
+            background: #aaaaaa;
             position: relative;
             display: block;
             float: left;
@@ -89,11 +89,11 @@
         }
 
         #wizHeader li a:hover {
-            background: #FE9400;
+            background: #aaaaaa;
         }
 
             #wizHeader li a:hover:after {
-                border-left-color: #FE9400 !important;
+                border-left-color: #aaaaaa !important;
             }
 
 .content {
@@ -102,4 +102,9 @@
 
 .wizardStep {
     padding: 10px;
+}
+
+#campWizard {
+    /*min-width: 910px !important;
+    overflow: auto;*/
 }

@@ -95,11 +95,14 @@
     <Content Include="Advertiser\Dashboard.aspx" />
     <Content Include="Advertiser\MyAccount.aspx" />
     <Content Include="Advertiser\MyAds.aspx" />
+    <Content Include="Advertiser\MyWallet.aspx" />
     <Content Include="Advertiser\NewCampaign.aspx" />
+    <Content Include="Advertiser\Support.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CountryTile.ascx" />
     <Content Include="css\AdminLTE - Copy 1.css" />
     <Content Include="css\AdminLTE.css" />
     <Content Include="css\bootstrap-slider\slider.css" />
@@ -250,10 +253,12 @@
     <Content Include="css\ionslider\ion.rangeSlider.css" />
     <Content Include="css\ionslider\ion.rangeSlider.skinFlat.css" />
     <Content Include="css\ionslider\ion.rangeSlider.skinNice.css" />
+    <Content Include="css\jquery.snippet.min.css" />
     <Content Include="css\jvectormap\jquery-jvectormap-1.2.2.css" />
     <Content Include="css\morris\morris.css" />
     <Content Include="css\MyStyleSheet.css" />
     <Content Include="css\prettify.css" />
+    <Content Include="css\styles.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="css\wizard.css" />
@@ -262,6 +267,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\ionicons.svg" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\ajax-loader1.gif" />
     <Content Include="img\asc.gif" />
@@ -464,11 +470,14 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.bootstrap.wizard.min.js" />
+    <Content Include="Scripts\jquery.easyWizard.js" />
     <Content Include="Scripts\jquery.slimscroll.min.js" />
+    <Content Include="Scripts\jquery.snippet.min.js" />
     <Content Include="Scripts\MyScript.js" />
     <Content Include="Scripts\npm.js" />
     <None Include="Scripts\_references.js" />
     <Content Include="Scripts\prettify.js" />
+    <Content Include="Scripts\scripts.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -510,6 +519,13 @@
     <Compile Include="Advertiser\MyAds.aspx.designer.cs">
       <DependentUpon>MyAds.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Advertiser\MyWallet.aspx.cs">
+      <DependentUpon>MyWallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\MyWallet.aspx.designer.cs">
+      <DependentUpon>MyWallet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Advertiser\NewCampaign.aspx.cs">
       <DependentUpon>NewCampaign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -517,12 +533,26 @@
     <Compile Include="Advertiser\NewCampaign.aspx.designer.cs">
       <DependentUpon>NewCampaign.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Advertiser\Support.aspx.cs">
+      <DependentUpon>Support.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertiser\Support.aspx.designer.cs">
+      <DependentUpon>Support.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Common.Master.cs">
       <DependentUpon>Common.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Common.Master.designer.cs">
       <DependentUpon>Common.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CountryTile.ascx.cs">
+      <DependentUpon>CountryTile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountryTile.ascx.designer.cs">
+      <DependentUpon>CountryTile.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">

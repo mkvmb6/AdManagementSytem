@@ -57,7 +57,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title"><i class="fa fa-envelope-o"></i>Create New Ad</h4>
+                            <h4 class="modal-title">Create New Ad</h4>
                         </div>
                         <div class="modal-body">
                             <div class="row">
@@ -124,7 +124,7 @@
 
                             <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>Discard</button>
 
-                            <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-envelope"></i>Create Ad</button>
+                            <button type="submit" class="btn btn-primary pull-left">Create Ad</button>
                         </div>
                     </div>
                     <!-- /.modal-content -->

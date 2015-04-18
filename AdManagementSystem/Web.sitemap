@@ -4,6 +4,10 @@
     <siteMapNode url="~/Advertiser/Dashboard.aspx" title="Dashboard"  description="Dashboard" />
     <siteMapNode url="~/Advertiser/BuyInventory.aspx" title="Buy Inventory"  description="Buy Inventory" />
     <siteMapNode url="~/Advertiser/MyAds.aspx" title="My Ads"  description="My Ads" />
+    <siteMapNode url="~/Advertiser/MyAccount.aspx" title="My Account"  description="My Account" />
+    <siteMapNode url="~/Advertiser/MyWallet.aspx" title="My Wallet"  description="My Wallet" />
+    <siteMapNode url="~/Advertiser/NewCampaign.aspx" title="New Campaign"  description="New Campaign" />
+    <siteMapNode url="~/Advertiser/Support.aspx" title="Support"  description="Support" />
     <siteMapNode url="Registration.aspx" title="Registration"  description="Register new user"/>
   </siteMapNode>
 </siteMap>

@@ -43,6 +43,7 @@
     <Compile Include="AdManagementUtility.cs" />
     <Compile Include="CategoryDao.cs" />
     <Compile Include="ConnectionManager.cs" />
+    <Compile Include="CountryDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserInfoDao.cs" />
   </ItemGroup>

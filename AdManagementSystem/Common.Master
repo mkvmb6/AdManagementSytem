@@ -52,7 +52,7 @@
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="Home.aspx" data-toggle="tooltip" data-placement="bottom"
+                            <a href="Advertiser/Dashboard.aspx" data-toggle="tooltip" data-placement="bottom"
                                 title="Home">
                                 <i class="fa fa-home" style="font-size: larger"></i>
                             </a>
@@ -80,7 +80,7 @@
     <script src="js/AdminLTE/app.js" type="text/javascript"></script>
 
     <!-- AdminLTE for demo purposes -->
-    <script src="js/AdminLTE/demo.js" type="text/javascript"></script>
+<%--    <script src="js/AdminLTE/demo.js" type="text/javascript"></script>--%>
 
 </body>
 </html>

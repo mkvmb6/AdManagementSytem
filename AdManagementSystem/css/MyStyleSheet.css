@@ -60,3 +60,56 @@
 .top30 {
     margin-top: 30px;
 }
+
+.text-bigger {
+    font-size: 1.2em;
+}
+
+.margin-right {
+    margin-right: 5px;
+}
+
+.margin-left {
+    margin-left: 5px;
+}
+
+.margin-top {
+    margin-top: 5px;
+}
+
+.margin-bottom {
+    margin-bottom: 5px;
+}
+
+.minusWallet, .plusWallet, .equalsWallet {
+    background-color: #666;
+    color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    top: 23px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif !important;
+    padding-top: 2px;
+}
+
+.invisibleButPresent {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.chkTile {
+    display: none;
+}
+
+.selected {
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.5);
+}

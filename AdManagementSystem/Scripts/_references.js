@@ -106,3 +106,6 @@
 /// <reference path="jquery.slimscroll.min.js" />
 /// <reference path="jquery.bootstrap.wizard.min.js" />
 /// <reference path="prettify.js" />
+/// <reference path="jquery.easywizard.js" />
+/// <reference path="jquery.snippet.min.js" />
+/// <reference path="scripts.js" />
